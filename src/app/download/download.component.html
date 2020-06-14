@@ -1,0 +1,37 @@
+<div class="title">
+  <div style="text-align: center">
+    <h1>CubeMod Download</h1>
+    <p>Lade dir CubeMod kostenlos herunter!</p>
+  </div>
+</div>
+
+<div class="content">
+  <h1>CubeMod herunterladen</h1>
+  <p>Hier kannst du dir den <b>CubeMod Installer</b> herunterladen.</p>
+  <button mat-raised-button color="primary"><mat-icon class="material-icons-round">get_app</mat-icon> Herunterladen</button>
+  <br>
+  <br>
+  <mat-chip-list>
+    <mat-chip>Version {{version}}</mat-chip>
+  </mat-chip-list>
+
+  <br><br>
+  <h1>Changelogs</h1>
+
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let item of versions">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+           <span [ngClass]="{'green': item.version == version}">Version {{item.version}}</span>
+        </mat-panel-title>
+        <mat-panel-description>
+          {{item.date}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <markdown>
+        {{item.description}}
+      </markdown>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</div>

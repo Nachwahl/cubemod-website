@@ -1,0 +1,22 @@
+.title {
+  background: #273036;
+  padding: 2% 20% 2% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  transition: 200ms ease-in-out;
+  margin-bottom: 20px;
+}
+.item:hover {
+  transform: translateY(-10px);
+}

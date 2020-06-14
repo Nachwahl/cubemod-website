@@ -1,0 +1,28 @@
+.title {
+  background: #273036;
+  padding: 2% 20% 2% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content {
+  padding: 5% 20% 10%;
+}
+
+
+.content h1::after {
+  display: block;
+  content: '';
+  width: 40px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #363636;
+  margin: 20px 0 10px 0;
+}
+
+
+.green {
+  color: green;
+}

@@ -1,0 +1,38 @@
+<div class="title">
+  <div style="text-align: center">
+    <h1>Shop</h1>
+    <p>Kaufe dir hier Ränge und Cosmetics für den CubeMod Client.</p>
+  </div>
+</div>
+<br>
+
+<div class="grid">
+  <mat-card [style.width.px]="250" class="item" *ngFor="let item of products">
+    <mat-card-header>
+      <mat-card-title>{{item.title}}</mat-card-title>
+      <mat-card-subtitle>{{item.type}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="item.imageUrl">
+    <mat-card-content>
+      <p>
+        {{item.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button><mat-icon class="material-icons-round">shopping_basket</mat-icon> Kaufen</button>
+      {{item.price}} €
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+

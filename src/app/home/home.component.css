@@ -1,0 +1,137 @@
+.waves {
+  margin-bottom: 0;
+  margin-top: -20%;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  font-family: 'GlacialIndifference', sans-serif;
+  background-image: url("../../assets/bg1.png");
+  color: white;
+}
+
+.hero h1 {
+  font-size: 350%;
+  font-weight: bold;
+  font-family: 'GlacialIndifference', sans-serif;
+}
+
+.content {
+  margin-top: -20px;
+  padding: 1% 20%;
+  background-color: #273036;
+  color: white;
+}
+
+.content-light {
+  margin-top: -20px;
+  padding: 5% 20% 10%;
+}
+
+
+.scrollDown {
+  margin-top: 125%;
+  margin-bottom: -300%;
+}
+
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  margin-right: 100px;
+}
+
+.content h2 {
+  font-size: 3em;
+}
+
+.content {
+  font-size: 1.1em;
+}
+
+.content h2::after {
+
+  display: block;
+  content: '';
+  width: 40px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #ff9800;
+  margin: 20px 0 10px 0;
+
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: lightgray;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+.content li {
+  padding-left: 1.3em;
+}
+.content li:before {
+  content: "done";
+  font-family: 'Material Icons';
+  display: inline-block;
+  margin-left: -1.3em;
+  width: 1.5em;
+  color: #ff9800;
+}
+
